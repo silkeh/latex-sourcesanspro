@@ -1,0 +1,66 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_2jmt2mbxsw64d3kfj6snxdno7a
+% Encoding created by otftotfm on Mon Jul 28 11:06:53 2014
+% Command line follows encoding
+/AutoEnc_2jmt2mbxsw64d3kfj6snxdno7a [
+%00
+  /Gamma /uni0394 /Theta /Lambda /Xi /Pi /Sigma /Upsilon
+  /Phi /Psi /uni03A9 /.notdef /.notdef /.notdef /.notdef /.notdef
+%10
+  /dotlessi /uni0237 /grave /acute /caron /breve /macron /ring
+  /cedilla /.notdef /AE.sc /OE.sc /Oslash.sc /AE /OE /Oslash
+%20
+  /space /exclam /quotedblright /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.sc /one.sc /two.sc /three.sc /four.sc /five.sc /six.sc /seven.sc
+  /eight.sc /nine.sc /colon /semicolon /exclamdown /equal /questiondown /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /quotedblleft /bracketright /circumflex /dotaccent
+%60
+  /quoteleft /A.sc /B.sc /C.sc /D.sc /E.sc /F.sc /G.sc
+  /H.sc /I.sc /J.sc /K.sc /L.sc /M.sc /N.sc /O.sc
+%70
+  /P.sc /Q.sc /R.sc /S.sc /T.sc /U.sc /V.sc /W.sc
+  /X.sc /Y.sc /Z.sc /endash /emdash /hungarumlaut /tilde /dieresis
+%80
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ot1
+% --tfm-directory=fonts/tfm/adobe/sourcesanspro
+% --vf-directory=fonts/vf/adobe/sourcesanspro
+% --type1-directory=fonts/type1/adobe/sourcesanspro
+% --truetype-directory=fonts/truetype/adobe/sourcesanspro
+% --encoding-directory=fonts/enc/dvips/sourcesanspro
+% --map-file=fonts/map/dvips/sourcesanspro/SourceSansPro.map --no-updmap
+% --coding-scheme=TEX TEXT --feature=kern --feature=liga --feature=smcp
+% --unicoding=germandbls =: SSsmall
+% fonts/opentype/adobe/sourcesanspro/SourceSansPro-Black.otf
+% SourceSansPro-Black-tlf-sc-ot1'
