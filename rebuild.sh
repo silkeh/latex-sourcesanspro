@@ -1,17 +1,16 @@
-#!/bin/sh
+#!/bin/bash
 # Simple Script to rebuild the fonts in this package.
 
-font="sourcesanspro"
+# Parameters
+fontname="SourceSansPro"
 vend="adobe"
 
-#mv fonts/enc/dvips/$font fonts/enc/dvips/$vend
-#mv fonts/map/dvips/$font fonts/map/dvips/$vend
+# Remove capitals from font
+font=${fontname,,}
 
 mv tex/latex/$font/$font.sty tex/latex/$font/$font.sty.tmp
 
-#autoinst -sanserif -target=. -vendor="$vend" -typeface="$font" -encoding=OT1,T1,LY1,TS1 -noswash -notitling -noupdmap -nosuperiors -noornaments -noinferiors fonts/opentype/$vend/$font/*
-
-# Font features (Version 1.050)
+# Font features (Version 2.010)
 # aalt	Access All Alternates
 # c2sc	Small Capitals From Capitals
 # case	Case-Sensitive Forms
@@ -55,13 +54,9 @@ autoinst fonts/opentype/$vend/$font/*	\
 	-noornaments						\
 	-noupdmap
 
-mv tex/latex/$font/$font.sty tex/latex/$font/$font-type1-autoinst.sty
+# Move the generated file and the hand-written one back
+mv tex/latex/$font/$fontname.sty tex/latex/$font/$font-type1-autoinst.sty
 mv tex/latex/$font/$font.sty.tmp tex/latex/$font/$font.sty
 
-#mv fonts/enc/dvips/$vend fonts/enc/dvips/$font
-#mv fonts/map/dvips/$vend fonts/map/dvips/$font
-
-rm -r fonts/type42
-rm -r fonts/vpl
-rm -r fonts/pl
-rm -r fonts/truetype
+# Remove empty directories
+find . -type d -empty -delete
