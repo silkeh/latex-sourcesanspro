@@ -8,6 +8,7 @@ vend="adobe"
 # Remove capitals from font
 font=${fontname,,}
 
+# Backup the hand-written package
 mv tex/latex/$font/$font.sty tex/latex/$font/$font.sty.tmp
 
 # Font features (Version 2.010)
