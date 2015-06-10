@@ -17,7 +17,7 @@ autoinst fonts/opentype/$vend/$font/*   \
     -target=.                           \
     -vendor="$vend"                     \
     -typeface="$font"                   \
-    -encoding=OT1,T1,LY1,TS1            \
+    -encoding=OT1,T1,LY1,TS1,LGR        \
     -ts1                                \
     -smallcaps                          \
     -superiors                          \
