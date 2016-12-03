@@ -11,13 +11,16 @@ font=${fontname,,}
 # Backup the hand-written package
 mv tex/latex/$font/$font.sty tex/latex/$font/$font.sty.tmp
 
+# Create symlink to encoding
+ln -s "$(kpsewhich CB.enc)" lgr.enc
+
 # Convert the OpenType fonts
 autoinst fonts/opentype/$vend/$font/*   \
     -sanserif                           \
     -target=.                           \
     -vendor="$vend"                     \
     -typeface="$font"                   \
-    -encoding=OT1,T1,LY1,TS1            \
+    -encoding=OT1,T1,LY1,TS1,LGR        \
     -ts1                                \
     -smallcaps                          \
     -superiors                          \
@@ -31,6 +34,9 @@ autoinst fonts/opentype/$vend/$font/*   \
 # Move the generated file and the hand-written one back
 mv tex/latex/$font/$fontname.sty tex/latex/$font/$font-type1-autoinst.sty
 mv tex/latex/$font/$font.sty.tmp tex/latex/$font/$font.sty
+
+# Remove encoding
+rm lgr.enc
 
 # Remove empty directories
 find . -type d -empty -delete
