@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_2jmt2mbxsw64d3kfj6snxdno7a
-% Encoding created by otftotfm on Mon Jul 28 11:06:53 2014
+% Encoding created by otftotfm on Sat Dec  3 17:05:47 2016
 % Command line follows encoding
 /AutoEnc_2jmt2mbxsw64d3kfj6snxdno7a [
 %00
@@ -60,7 +60,7 @@
 % --truetype-directory=fonts/truetype/adobe/sourcesanspro
 % --encoding-directory=fonts/enc/dvips/sourcesanspro
 % --map-file=fonts/map/dvips/sourcesanspro/SourceSansPro.map --no-updmap
-% --coding-scheme=TEX TEXT --feature=kern --feature=liga --feature=smcp
-% --unicoding=germandbls =: SSsmall
+% --coding-scheme=TEX TEXT --feature=kern --feature=liga --feature=onum
+% --feature=smcp --unicoding=germandbls =: SSsmall
 % fonts/opentype/adobe/sourcesanspro/SourceSansPro-Black.otf
-% SourceSansPro-Black-tlf-sc-ot1'
+% SourceSansPro-Black-tosf-sc-ot1'

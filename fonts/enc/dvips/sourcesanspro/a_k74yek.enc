@@ -1,0 +1,66 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_k74yekkpsmxvb2akzmpvkyqg6b
+% Encoding created by otftotfm on Sat Dec  3 17:05:47 2016
+% Command line follows encoding
+/AutoEnc_k74yekkpsmxvb2akzmpvkyqg6b [
+%00
+  /endash /.notdef /.notdef /.notdef /.notdef /.notdef /uni03DB /uni03DB
+  /uni1FBE /uni1FBC /uni1FCC /uni1FFC /Alpha /Upsilondieresis /Alpha.sc /Upsilondieresis.sc
+%10
+  /.notdef /.notdef /.notdef /uni03D9 /.notdef /.notdef /.notdef /.notdef
+  /Euro /perthousand /uni018F.sc /uni03E1 /quoteleft /quoteright /breve /macron
+%20
+  /uni1FC1 /exclam /dieresis /dieresistonos /uni1FED /percent /periodcentered /tonos
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.sc /one.sc /two.sc /three.sc /four.sc /five.sc /six.sc /seven.sc
+  /eight.sc /nine.sc /colon /anoteleia /uni1FFE /equal /uni1FBF /semicolon
+%40
+  /uni1FDF /Alpha /Beta /uni1FDD /uni0394 /Epsilon /Phi /Gamma
+  /Eta /Iota /Theta /Kappa /Lambda /Mu /Nu /Omicron
+%50
+  /Pi /Chi /Rho /Sigma /Tau /Upsilon /uni1FDE /uni03A9
+  /Xi /Psi /Zeta /bracketleft /uni1FCF /bracketright /uni1FCE /uni1FCD
+%60
+  /uni1FEF /Alpha.sc /Beta.sc /Sigma.sc /uni0394.sc /Epsilon.sc /uni03D5 /Gamma.sc
+  /Eta.sc /Iota.sc /Theta.sc /Kappa.sc /Lambda.sc /Mu.sc /Nu.sc /Omicron.sc
+%70
+  /Pi.sc /Chi.sc /Rho.sc /Sigma.sc /Tau.sc /Upsilon.sc /.notdef /uni03A9.sc
+  /Xi.sc /Psi.sc /Zeta.sc /guillemotleft /uni037A /guillemotright /uni1FC0 /emdash
+%80
+  /Alpha.sc /Alpha.sc /Alpha.sc /Alpha.sc /Alphaiotasub.sc /Alphaiotasub.sc /Alphaiotasub.sc /Alphaiotasub.sc
+  /Alpha.sc /Alpha.sc /Alpha.sc /Alpha.sc /Alphaiotasub.sc /Alphaiotasub.sc /Alphaiotasub.sc /Alphaiotasub.sc
+%90
+  /Alpha.sc /Alpha.sc /Alpha.sc /uni03DD /Alphaiotasub.sc /Alphaiotasub.sc /Alphaiotasub.sc /.notdef
+  /Eta.sc /Eta.sc /Eta.sc /space /Etaiotasub.sc /Etaiotasub.sc /Etaiotasub.sc /.notdef
+%A0
+  /Eta.sc /Eta.sc /Eta.sc /Eta.sc /Etaiotasub.sc /Etaiotasub.sc /Etaiotasub.sc /Etaiotasub.sc
+  /Eta.sc /Eta.sc /Eta.sc /Eta.sc /Etaiotasub.sc /Etaiotasub.sc /Etaiotasub.sc /Etaiotasub.sc
+%B0
+  /uni03A9.sc /uni03A9.sc /uni03A9.sc /uni03A9.sc /Omegaiotasub.sc /Omegaiotasub.sc /Omegaiotasub.sc /Omegaiotasub.sc
+  /uni03A9.sc /uni03A9.sc /uni03A9.sc /uni03A9.sc /Omegaiotasub.sc /Omegaiotasub.sc /Omegaiotasub.sc /Omegaiotasub.sc
+%C0
+  /uni03A9.sc /uni03A9.sc /uni03A9.sc /.notdef /Omegaiotasub.sc /Omegaiotasub.sc /Omegaiotasub.sc /uni032E
+  /Iota.sc /Iota.sc /Iota.sc /Iota.sc /Upsilon.sc /Upsilon.sc /Upsilon.sc /Upsilon.sc
+%D0
+  /Iota.sc /Iota.sc /Iota.sc /Iota.sc /Upsilon.sc /Upsilon.sc /Upsilon.sc /Upsilon.sc
+  /Iota.sc /Iota.sc /Iota.sc /Iotadieresis /Upsilon.sc /Upsilon.sc /Upsilon.sc /Upsilondieresis
+%E0
+  /Epsilon.sc /Epsilon.sc /Epsilon.sc /Epsilon.sc /Omicron.sc /Omicron.sc /Omicron.sc /Omicron.sc
+  /Epsilon.sc /Epsilon.sc /Epsilon.sc /Epsilon.sc /Omicron.sc /Omicron.sc /Omicron.sc /Omicron.sc
+%F0
+  /Iotadieresis.sc /Iotadieresis.sc /Iotadieresis.sc /Iotadieresis.sc /Upsilondieresis.sc /Upsilondieresis.sc /Upsilondieresis.sc /Upsilondieresis.sc
+  /Alphaiotasub.sc /Etaiotasub.sc /Omegaiotasub.sc /Rho.sc /Rho.sc /uni032F /uni0374 /uni0375
+] def
+% Command line: 'otftotfm --automatic --encoding=lgr
+% --tfm-directory=fonts/tfm/adobe/sourcesanspro
+% --vf-directory=fonts/vf/adobe/sourcesanspro
+% --type1-directory=fonts/type1/adobe/sourcesanspro
+% --truetype-directory=fonts/truetype/adobe/sourcesanspro
+% --encoding-directory=fonts/enc/dvips/sourcesanspro
+% --map-file=fonts/map/dvips/sourcesanspro/SourceSansPro.map --no-updmap
+% --feature=kern --feature=liga --feature=onum --feature=smcp
+% --unicoding=germandbls =: SSsmall
+% fonts/opentype/adobe/sourcesanspro/SourceSansPro-Black.otf
+% SourceSansPro-Black-tosf-sc-lgr'

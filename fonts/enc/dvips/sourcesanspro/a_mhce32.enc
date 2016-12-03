@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_mhce323co62ylqxed5zxi6hffh
-% Encoding created by otftotfm on Mon Jul 28 11:06:53 2014
+% Encoding created by otftotfm on Sat Dec  3 17:05:47 2016
 % Command line follows encoding
 /AutoEnc_mhce323co62ylqxed5zxi6hffh [
 %00
@@ -61,6 +61,6 @@
 % --encoding-directory=fonts/enc/dvips/sourcesanspro
 % --map-file=fonts/map/dvips/sourcesanspro/SourceSansPro.map --no-updmap
 % --coding-scheme=EXTENDED TEX FONT ENCODING - LATIN --feature=kern
-% --feature=liga --feature=smcp --unicoding=germandbls =: SSsmall
-% fonts/opentype/adobe/sourcesanspro/SourceSansPro-Black.otf
-% SourceSansPro-Black-tlf-sc-t1'
+% --feature=liga --feature=onum --feature=smcp --unicoding=germandbls =:
+% SSsmall fonts/opentype/adobe/sourcesanspro/SourceSansPro-Black.otf
+% SourceSansPro-Black-tosf-sc-t1'
