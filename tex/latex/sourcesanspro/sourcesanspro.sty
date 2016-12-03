@@ -65,7 +65,10 @@
 % Load OpenType files
 \ifsourcesanspro@otf
 	\RequirePackage{fontspec}
-	
+
+	% Create a fixed liningnums command:
+	\renewcommand*\liningnums[1]{{\addfontfeature{RawFeature=+lnum;-onum}#1}}
+
 	% Oldstyle/Lining
 	\ifsourcesanspro@oldstyle
 		\def\sourcesanspro@figurestyle{OldStyle}
@@ -203,8 +206,8 @@
 	\fi
 	
 	% If source sans pro is the default font \oldstylenums needs a new definition.
-	\let\nativeoldstylenums\oldstylenums
 	\ifsourcesanspro@default
+		\let\nativeoldstylenums\oldstylenums
 		\renewcommand*\oldstylenums[1]{%
 			\begingroup
 				\ifmmode
