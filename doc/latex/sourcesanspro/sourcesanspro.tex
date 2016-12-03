@@ -1,5 +1,5 @@
 \documentclass[10pt,a4paper,english]{article}
-\usepackage{geometry,metalogo,hyperref,babel,mdwlist,array,multicol,fontawesome}
+\usepackage{geometry,metalogo,hyperref,babel,mdwlist,array,multicol}
 \usepackage[default,osf]{sourcesanspro}
 \usepackage[scaled=.95]{sourcecodepro}
 
@@ -18,7 +18,7 @@
 }
 
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for sourcesanspro v2.5.\\ \today}
+\date{Documentation for sourcesanspro v2.6.\\ \today}
 
 \begin{document}
 \maketitle
@@ -65,7 +65,7 @@ Adobe's Source Sans Pro typeface is available under the \href{http://scripts.sil
 All \LaTeX\ code is available under the \href{http://www.latex-project.org/lppl/}{\LaTeX\ project public license} v1.3 or later.
 
 \section{Specimen}
-Simple specimen can be found on page \pageref{sec:specimen}. Full specimen can be \href{http://store1.adobe.com/type/browser/pdfs/1959.pdf}{acquired from Adobe}.
+Simple specimen can be found on page \pageref{sec:specimen}. Full specimen can be \href{http://adobe-fonts.github.io/source-sans-pro/}{acquired from Adobe}.
 
 \section{OpenType}
 The OpenType fonts have many features, including old style numerals (1 6 9),  ligatures (ff fi fl ft {\addfontfeature{Style=Alternate}fl}) and stylistic alternatives ({\addfontfeature{Style=Alternate} l a g I}).
@@ -100,6 +100,13 @@ The following Type1 font families are included:
 With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’ and shapes ‘n’, ‘i’ and ‘sc’.
 
 \section{Version history}
+\subsection*{2.6}
+\begin{itemize*}
+	\item Updated fonts to Roman 2.020 and Italic 1.075.
+	\item Modified the \texttt{\textbackslash liningnums} to accomodate for the missing \texttt{lnum} feature.
+	\item Experimental support for the LGR (Greek) encoding.
+\end{itemize*}
+
 \subsection*{2.5}
 \begin{itemize*}
 	\item Updated fonts to 2.010
@@ -143,9 +150,7 @@ With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘k’ and shapes �
 \end{itemize*}
 
 \section{Known issues}
-\begin{itemize*}
-	\item Using \texttt{\textbackslash liningnums} when the default numbers are oldstyle results in an ‘font feature does not exist’ error and no lining numbers due to lack of the ‘lnum’ font feature.
-\end{itemize*}
+Issues can be reported \href{https://github.com/silkeh/latex-sourcesanspro/issues}{on GitHub}.
 
 \newpage
 \end{multicols}

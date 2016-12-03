@@ -1,5 +1,5 @@
-Source Sans Pro v2.5
-====================
+Source Sans Pro
+===============
 This package provides the Source Sans Pro typeface as a LaTeX package.
 Full documentation and revision history in `sourcesanspro.pdf`.
 

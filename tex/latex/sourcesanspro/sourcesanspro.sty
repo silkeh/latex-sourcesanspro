@@ -8,7 +8,7 @@
 % Licenced under the LPPL v1.3 or higher.
 %
 \NeedsTeXFormat{LaTeX2e}[1994/12/01]
-\ProvidesPackage{sourcesanspro}[2015/01/11 v2.5 Adobe's Source Sans Pro typeface]
+\ProvidesPackage{sourcesanspro}[2016/12/03 v2.6 Adobe's Source Sans Pro typeface]
 
 \RequirePackage{ifxetex,ifluatex,xkeyval}
 
@@ -75,14 +75,14 @@
 	\else
 		\def\sourcesanspro@figurestyle{}
 	\fi
-	
+
 	% Tabular/Proportional
 	\ifsourcesanspro@tabular
 		\def\sourcesanspro@figurealign{Monospaced}
 	\else
 		\def\sourcesanspro@figurealign{Proportional}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifsourcesanspro@black
 		\def\sourcesanspro@boldstyle{Black}
@@ -93,7 +93,7 @@
 			\def\sourcesanspro@boldstyle{Bold}
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular
 	\ifsourcesanspro@light
 		\def\sourcesanspro@regstyle{Light}
@@ -104,7 +104,7 @@
 			\def\sourcesanspro@regstyle{Regular}
 		\fi
 	\fi
-	
+
 	% Shared features
 	\defaultfontfeatures{
 		Ligatures = TeX ,
@@ -117,20 +117,20 @@
 		\setsansfont
 			[ UprightFont    = *-\sourcesanspro@regstyle ,
 			  ItalicFont     = *-\sourcesanspro@regstyle It ,
-			  BoldFont       = *-\sourcesanspro@boldstyle , 
+			  BoldFont       = *-\sourcesanspro@boldstyle ,
 			  BoldItalicFont = *-\sourcesanspro@boldstyle It]
 			{SourceSansPro}
 	\fi
-	
+
 	% Font families
 	% Regular/Bold
 	\newfontfamily\sourcesanspro
 		[ UprightFont    = *-Regular ,
 		  ItalicFont     = *-RegularIt ,
-		  BoldFont       = *-Bold , 
+		  BoldFont       = *-Bold ,
 		  BoldItalicFont = *-BoldIt ]
 		{SourceSansPro}
-	
+
 	% Light/Semibold
 	\newfontfamily\sourcesansprolight
 		[ UprightFont    = *-Light ,
@@ -138,7 +138,7 @@
 		  BoldFont       = *-Semibold ,
 		  BoldItalicFont = *-SemiboldIt ]
 		{SourceSansPro}
-	
+
 	% ExtraLight/Black
 	\newfontfamily\sourcesansproextreme
 		[ UprightFont    = *-ExtraLight ,
@@ -146,16 +146,16 @@
 		  BoldFont       = *-Black ,
 		  BoldItalicFont = *-BlackIt ]
 		{SourceSansPro}
-		
+
 	% Lining figures
 	\newfontfamily\sourcesansprolf
 		[ Numbers        = \sourcesanspro@figurealign ,
 		  UprightFont    = *-\sourcesanspro@regstyle ,
 		  ItalicFont     = *-\sourcesanspro@regstyle It ,
-		  BoldFont       = *-\sourcesanspro@boldstyle , 
-		  BoldItalicFont = *-\sourcesanspro@boldstyle It]
+		  BoldFont       = *-\sourcesanspro@boldstyle ,
+		  BoldItalicFont = *-\sourcesanspro@boldstyle It ]
 		{SourceSansPro}
-	
+
 	% Dont keep all default font features
 	\defaultfontfeatures{}
 
@@ -170,14 +170,14 @@
 	\else
 		\def\sourcesanspro@figurestyle{LF}
 	\fi
-	
+
 	% Tabular/Proportional
 	\ifsourcesanspro@tabular
 		\def\sourcesanspro@figurealign{T}
 	\else
 		\def\sourcesanspro@figurealign{}
 	\fi
-	
+
 	% Black/Semibold/Bold
 	\ifsourcesanspro@black
 		\def\bfseries@sf{k}
@@ -188,7 +188,7 @@
 			\def\bfseries@sf{b}
 		\fi
 	\fi
-	
+
 	% Light/ExtraLight/Regular
 	\ifsourcesanspro@light
 		\def\mdseries@sf{l}
@@ -204,7 +204,7 @@
 	\ifsourcesanspro@sfdefault
 		\edef\sfdefault{SourceSansPro-\sourcesanspro@figurealign\sourcesanspro@figurestyle}
 	\fi
-	
+
 	% If source sans pro is the default font \oldstylenums needs a new definition.
 	\ifsourcesanspro@default
 		\let\nativeoldstylenums\oldstylenums
