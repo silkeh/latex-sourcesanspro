@@ -59,7 +59,7 @@
 \DeclareOptionX{otf}         {\sourcesanspro@otftrue}
 
 % Default options
-\ExecuteOptionsX{sfdefault,lining,proportional,bold,regular}
+\ExecuteOptionsX{sfdefault,lining,tabular,bold,regular}
 \ProcessOptionsX\relax
 
 % Load OpenType files
@@ -78,7 +78,7 @@
 
 	% Tabular/Proportional
 	\ifsourcesanspro@tabular
-		\def\sourcesanspro@figurealign{Monospaced}
+		\def\sourcesanspro@figurealign{}
 	\else
 		\def\sourcesanspro@figurealign{Proportional}
 	\fi
