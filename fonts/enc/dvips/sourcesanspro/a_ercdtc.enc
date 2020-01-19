@@ -1,0 +1,67 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_ercdtcsb3eh6obpgqhtipuvv5e
+% Encoding created by otftotfm on Sun Jan 19 16:10:25 2020
+% Command line follows encoding
+/AutoEnc_ercdtcsb3eh6obpgqhtipuvv5e [
+%00
+  /Gamma /Delta /Theta /Lambda /Xi /Pi /Sigma /Upsilon
+  /Phi /Psi /Omega /.notdef /fi /fl /.notdef /.notdef
+%10
+  /dotlessi /uni0237 /grave /acute /caron /breve /macron /ring
+  /cedilla /germandbls /ae /oe /oslash /AE /OE /Oslash
+%20
+  /space /exclam /quotedblright /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.t /one.t /two.t /three.t /four.t /five.tm /six.t /seven.t
+  /eight.t /nine.t /colon /semicolon /exclamdown /equal /questiondown /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /quotedblleft /bracketright /circumflex /dotaccent
+%60
+  /quoteleft /a /b /c /d /e /f /g
+  /h /i /j /k /l /m /n /o
+%70
+  /p /q /r /s /t /u /v /w
+  /x /y /z /endash /emdash /hungarumlaut /tilde /dieresis
+%80
+  /f_f /f_t /f_f_t /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /Lslash /.notdef /.notdef /.notdef /.notdef /.notdef
+%90
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%A0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /lslash /.notdef /.notdef /.notdef /.notdef /.notdef
+%B0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%C0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%D0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%E0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+%F0
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+  /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ot1
+% --tfm-directory=fonts/tfm/adobe/sourcesanspro
+% --vf-directory=fonts/vf/adobe/sourcesanspro
+% --type1-directory=fonts/type1/adobe/sourcesanspro
+% --truetype-directory=fonts/truetype/adobe/sourcesanspro
+% --encoding-directory=fonts/enc/dvips/sourcesanspro
+% --map-file=fonts/map/dvips/sourcesanspro/SourceSansPro.map --no-updmap
+% --coding-scheme=TEX TEXT --feature=kern --feature=liga --feature=onum
+% --ligkern=f i =: fi --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i
+% =: ffi --ligkern=ff l =: ffl
+% fonts/opentype/adobe/sourcesanspro/SourceSansPro-BlackIt.otf
+% SourceSansPro-BlackIt-tosf-ot1'

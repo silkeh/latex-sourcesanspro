@@ -1,0 +1,68 @@
+% THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
+
+%%AutoEnc_ivdnq26y2uvzh32jkdvfws67od
+% Encoding created by otftotfm on Sun Jan 19 16:10:29 2020
+% Command line follows encoding
+/AutoEnc_ivdnq26y2uvzh32jkdvfws67od [
+%00
+  /.notdef /Euro /.notdef /.notdef /fraction /dotaccent /hungarumlaut /ogonek
+  /.notdef /.notdef /.notdef /.notdef /fi /fl /.notdef /.notdef
+%10
+  /I.s /uni0237 /grave /acute /caron /breve /macron /ring
+  /cedilla /.notdef /AE.s /OE.s /Oslash.s /AE /OE /Oslash
+%20
+  /space /exclam /quotedbl /numbersign /dollar /percent /ampersand /quoteright
+  /parenleft /parenright /asterisk /plus /comma /hyphen /period /slash
+%30
+  /zero.t /one.t /two.t /three.t /four.t /five.tm /six.t /seven.t
+  /eight.t /nine.t /colon /semicolon /less /equal /greater /question
+%40
+  /at /A /B /C /D /E /F /G
+  /H /I /J /K /L /M /N /O
+%50
+  /P /Q /R /S /T /U /V /W
+  /X /Y /Z /bracketleft /backslash /bracketright /circumflex /underscore
+%60
+  /quoteleft /A.s /B.s /C.s /D.s /E.s /F.s /G.s
+  /H.s /I.s /J.s /K.s /L.s /M.s /N.s /O.s
+%70
+  /P.s /Q.s /R.s /S.s /T.s /U.s /V.s /W.s
+  /X.s /Y.s /Z.s /braceleft /bar /braceright /tilde /dieresis
+%80
+  /Lslash /quotesingle /quotesinglbase /uni0192 /quotedblbase /ellipsis /dagger /daggerdbl
+  /circumflex /perthousand /Scaron /guilsinglleft /OE /Zcaron /asciicircum /minus
+%90
+  /Lslash.s /quoteleft /quoteright /quotedblleft /quotedblright /bullet /endash /emdash
+  /tilde /trademark /Scaron.s /guilsinglright /OE.s /Zcaron.s /asciitilde /Ydieresis
+%A0
+  /.notdef /exclamdown /cent /sterling /currency /yen /brokenbar /section
+  /dieresis /copyright /ordfeminine /guillemotleft /logicalnot /hyphen /registered /macron
+%B0
+  /degree /plusminus /two.sups /three.sups /acute /mu /paragraph /periodcentered
+  /cedilla /one.sups /ordmasculine /guillemotright /onequarter /onehalf /threequarters /questiondown
+%C0
+  /Agrave /Aacute /Acircumflex /Atilde /Adieresis /Aring /AE /Ccedilla
+  /Egrave /Eacute /Ecircumflex /Edieresis /Igrave /Iacute /Icircumflex /Idieresis
+%D0
+  /Eth /Ntilde /Ograve /Oacute /Ocircumflex /Otilde /Odieresis /multiply
+  /Oslash /Ugrave /Uacute /Ucircumflex /Udieresis /Yacute /Thorn /.notdef
+%E0
+  /Agrave.s /Aacute.s /Acircumflex.s /Atilde.s /Adieresis.s /Aring.s /AE.s /Ccedilla.s
+  /Egrave.s /Eacute.s /Ecircumflex.s /Edieresis.s /Igrave.s /Iacute.s /Icircumflex.s /Idieresis.s
+%F0
+  /Eth.s /Ntilde.s /Ograve.s /Oacute.s /Ocircumflex.s /Otilde.s /Odieresis.s /divide
+  /Oslash.s /Ugrave.s /Uacute.s /Ucircumflex.s /Udieresis.s /Yacute.s /Thorn.s /Ydieresis.s
+] def
+% Command line: 'otftotfm --automatic --encoding=fontools_ly1
+% --tfm-directory=fonts/tfm/adobe/sourcesanspro
+% --vf-directory=fonts/vf/adobe/sourcesanspro
+% --type1-directory=fonts/type1/adobe/sourcesanspro
+% --truetype-directory=fonts/truetype/adobe/sourcesanspro
+% --encoding-directory=fonts/enc/dvips/sourcesanspro
+% --map-file=fonts/map/dvips/sourcesanspro/SourceSansPro.map --no-updmap
+% --coding-scheme=TEX TYPEWRITER AND WINDOWS ANSI --feature=kern
+% --feature=liga --feature=onum --feature=smcp --ligkern=f i =: fi
+% --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff
+% l =: ffl --unicoding=germandbls =: SSsmall
+% fonts/opentype/adobe/sourcesanspro/SourceSansPro-Black.otf
+% SourceSansPro-Black-tosf-sc-ly1'

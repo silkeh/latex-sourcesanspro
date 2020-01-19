@@ -1,7 +1,7 @@
 % THIS FILE WAS AUTOMATICALLY GENERATED -- DO NOT EDIT
 
 %%AutoEnc_ea4zg53eezyekzfxxlxx7wqnna
-% Encoding created by otftotfm on Sun May 19 17:39:31 2019
+% Encoding created by otftotfm on Sun Jan 19 16:10:25 2020
 % Command line follows encoding
 /AutoEnc_ea4zg53eezyekzfxxlxx7wqnna [
 %00
@@ -62,5 +62,5 @@
 % --map-file=fonts/map/dvips/sourcesanspro/SourceSansPro.map --no-updmap
 % --coding-scheme=TEX TEXT --feature=kern --feature=liga --ligkern=f i =: fi
 % --ligkern=f l =: fl --ligkern=f f =: ff --ligkern=ff i =: ffi --ligkern=ff
-% l =: ffl fonts/opentype/adobe/sourcesanspro/SourceSansPro-Black.otf
-% SourceSansPro-Black-tlf-ot1'
+% l =: ffl fonts/opentype/adobe/sourcesanspro/SourceSansPro-BlackIt.otf
+% SourceSansPro-BlackIt-tlf-ot1'
