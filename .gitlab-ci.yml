@@ -14,8 +14,6 @@ variables:
 
 build:
   stage: build
-  before_script:
-    - apk add make zip perl-file-copy-recursive
   script:
     - make fonts
     - cp -a $CI_PROJECT_DIR/* /usr/local/texlive/texmf-local
