@@ -1,0 +1,54 @@
+---
+stages:
+  - lint
+  - build
+  - deploy
+
+default:
+  image: silkeh/latex:full
+
+variables:
+  CTAN_FILE: sourcesans.tar.gz
+  TDS_FILE: sourcesans.tds.zip
+  PACKAGE_REGISTRY_URL: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/release/${CI_COMMIT_TAG}
+
+build:
+  stage: build
+  before_script:
+    - apk add make zip perl-file-copy-recursive
+  script:
+    - make fonts
+    - cp -a $CI_PROJECT_DIR/* /usr/local/texlive/texmf-local
+    - echo Map SourceSansThree.map > /usr/local/texlive/texmf-local/web2c/updmap.cfg
+    - texhash
+    - updmap-sys
+    - make
+  artifacts:
+    paths:
+      - "*.tar.gz"
+      - "*.zip"
+
+upload:
+  stage: deploy
+  image: curlimages/curl:latest
+  script:
+    - |
+      curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ${CTAN_FILE} "${PACKAGE_REGISTRY_URL}/${CTAN_FILE}"
+    - |
+      curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ${TDS_FILE}  "${PACKAGE_REGISTRY_URL}/${TDS_FILE}"
+  rules:
+    - if: $CI_COMMIT_TAG
+
+release:
+  stage: deploy
+  needs: [upload]
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  script:
+    - |
+      release-cli create \
+        --name "LaTeX Source Sans $CI_COMMIT_TAG" \
+        --tag-name "$CI_COMMIT_TAG" \
+        --assets-link "{\"name\":\"${CTAN_FILE}\",\"url\":\"${PACKAGE_REGISTRY_URL}/${CTAN_FILE}\"}" \
+        --assets-link "{\"name\":\"${TDS_FILE}\",\"url\":\"${PACKAGE_REGISTRY_URL}/${TDS_FILE}\"}"
+  rules:
+    - if: $CI_COMMIT_TAG
