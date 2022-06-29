@@ -6,16 +6,15 @@ stages:
 
 default:
   image: silkeh/latex:full
+  interruptible: true
 
 variables:
-  CTAN_FILE: sourcesans.tar.gz
+  CTAN_FILE: sourcesans.zip
   TDS_FILE: sourcesans.tds.zip
   PACKAGE_REGISTRY_URL: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/release/${CI_COMMIT_TAG}
 
 build:
   stage: build
-  before_script:
-    - apk add make zip perl-file-copy-recursive
   script:
     - make fonts
     - cp -a $CI_PROJECT_DIR/* /usr/local/texlive/texmf-local
@@ -25,7 +24,6 @@ build:
     - make
   artifacts:
     paths:
-      - "*.tar.gz"
       - "*.zip"
 
 upload:

@@ -11,7 +11,7 @@ PKG_OUT  = $(TEX_DIR)/$(PACKAGE)-type1-autoinst.sty
 
 ENCS = lgr.enc
 
-all: $(PACKAGE).tds.zip $(PACKAGE).tar.gz
+all: $(PACKAGE).tds.zip $(PACKAGE).zip
 
 fonts: $(PKG_OUT)
 
@@ -21,9 +21,8 @@ docs: $(PKG_OUT)
 $(PACKAGE).tds.zip: $(PACKAGE).files
 	zip $(PACKAGE).tds.zip -@ < $^
 
-$(PACKAGE).tar.gz: $(PACKAGE).files $(PACKAGE).tds.zip
-	ctanify --notds --pkgname=$(PACKAGE) \
-		$$(cat $<) README.md $(PACKAGE).tds.zip
+$(PACKAGE).zip: $(PACKAGE).tds.zip
+	./create-ctan-zip.sh $< $(PACKAGE)
 
 $(PACKAGE).files: fonts docs
 	find tex/   -type f  > $@
@@ -34,7 +33,7 @@ $(PACKAGE).files: fonts docs
 		-o -name "*.tex" >> $@
 
 lgr.enc:
-	ln -s $(shell kpsewhich CB.enc) lgr.enc
+	ln -sf $(shell kpsewhich CB.enc) lgr.enc
 
 $(PKG_OUT): $(OTF_DIR)/$(OTF_NAME)-Regular.otf $(ENCS)
 	autoinst fonts/opentype/$(VENDOR)/$(PACKAGE)/*   \
@@ -57,7 +56,7 @@ clean:
 	$(MAKE) -C $(DOC_DIR) clean
 	find . -type d -empty -delete
 	rm -f $(ENCS)
-	rm -f *.zip *.tar.gz
+	rm -f *.zip
 	rm -f $(PACKAGE).files
 
 distclean: clean
