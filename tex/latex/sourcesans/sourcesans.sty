@@ -1,0 +1,229 @@
+% Source Sans for LaTeX
+%
+% Silke Hofstra, tex@slxh.nl
+%
+% This file selects either the OTF or the TYPE1 fonts based on
+% the LaTeX engine used.
+%
+% Licenced under the LPPL v1.3 or higher.
+%
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{sourcesans}[2022/06/29 v3.0 Adobe's Source Sans typeface]
+
+\RequirePackage{ifxetex,ifluatex,xkeyval}
+
+% Switches
+\newif\ifsourcesans@otf
+\newif\ifsourcesans@default
+\newif\ifsourcesans@sfdefault
+\newif\ifsourcesans@oldstyle
+\newif\ifsourcesans@tabular
+\newif\ifsourcesans@black
+\newif\ifsourcesans@semibold
+\newif\ifsourcesans@light
+\newif\ifsourcesans@extralight
+
+% Scaling command
+\newcommand*{\SourceSansThree@scale}{1}
+
+% Use OpenType fonts for XeTeX and LuaTeX.
+\ifxetex
+	\sourcesans@otftrue
+\else
+	\ifluatex
+		\sourcesans@otftrue
+	\fi
+\fi
+
+\DeclareOptionX{lining}      {\sourcesans@oldstylefalse}
+\DeclareOptionX{nf}          {\sourcesans@oldstylefalse}
+\DeclareOptionX{lf}          {\sourcesans@oldstylefalse}
+\DeclareOptionX{oldstyle}    {\sourcesans@oldstyletrue}
+\DeclareOptionX{osf}         {\sourcesans@oldstyletrue}
+\DeclareOptionX{tabular}     {\sourcesans@tabulartrue}
+\DeclareOptionX{proportional}{\sourcesans@tabularfalse}
+\DeclareOptionX{black}       {\sourcesans@blacktrue \sourcesans@semiboldfalse}
+\DeclareOptionX{semibold}    {\sourcesans@blackfalse\sourcesans@semiboldtrue}
+\DeclareOptionX{bold}        {\sourcesans@blackfalse\sourcesans@semiboldfalse}
+\DeclareOptionX{light}       {\sourcesans@lighttrue \sourcesans@extralightfalse}
+\DeclareOptionX{extralight}  {\sourcesans@lightfalse\sourcesans@extralighttrue}
+\DeclareOptionX{regular}     {\sourcesans@lightfalse\sourcesans@extralightfalse}
+\DeclareOptionX{scale}       {\renewcommand*{\SourceSansThree@scale}{#1}}
+\DeclareOptionX{scaled}      {\renewcommand*{\SourceSansThree@scale}{#1}}
+\DeclareOptionX{default}     {\sourcesans@defaulttrue}
+\DeclareOptionX{sfdefault}   {\sourcesans@sfdefaulttrue}
+\DeclareOptionX{nosfdefault} {\sourcesans@sfdefaultfalse}
+\DeclareOptionX{type1}       {\sourcesans@otffalse}
+\DeclareOptionX{t1}          {\sourcesans@otffalse}
+\DeclareOptionX{opentype}    {\sourcesans@otftrue}
+\DeclareOptionX{otf}         {\sourcesans@otftrue}
+
+% Default options
+\ExecuteOptionsX{sfdefault,lining,tabular,bold,regular}
+\ProcessOptionsX\relax
+
+% Load OpenType files
+\ifsourcesans@otf
+	\RequirePackage{fontspec}
+
+	% Create a fixed liningnums command:
+	\renewcommand*\liningnums[1]{{\addfontfeature{RawFeature=+lnum;-onum}#1}}
+
+	% Oldstyle/Lining
+	\ifsourcesans@oldstyle
+		\def\sourcesans@figurestyle{OldStyle}
+	\else
+		\def\sourcesans@figurestyle{}
+	\fi
+
+	% Tabular/Proportional
+	\ifsourcesans@tabular
+		\def\sourcesans@figurealign{}
+	\else
+		\def\sourcesans@figurealign{Proportional}
+	\fi
+
+	% Black/Semibold/Bold
+	\ifsourcesans@black
+		\def\sourcesans@boldstyle{Black}
+	\else
+		\ifsourcesans@semibold
+			\def\sourcesans@boldstyle{Semibold}
+		\else
+			\def\sourcesans@boldstyle{Bold}
+		\fi
+	\fi
+
+	% Light/ExtraLight/Regular
+	\ifsourcesans@light
+		\def\sourcesans@regstyle{Light}
+	\else
+		\ifsourcesans@extralight
+			\def\sourcesans@regstyle{ExtraLight}
+		\else
+			\def\sourcesans@regstyle{Regular}
+		\fi
+	\fi
+
+	% Shared features
+	\defaultfontfeatures{
+		Ligatures = TeX ,
+		Numbers   = {\sourcesans@figurealign , \sourcesans@figurestyle } ,
+		Scale     = \SourceSansThree@scale ,
+		Extension = .otf }
+
+	% Sans serif font
+	\ifsourcesans@sfdefault
+		\setsansfont
+			[ UprightFont    = *-\sourcesans@regstyle ,
+			  ItalicFont     = *-\sourcesans@regstyle It ,
+			  BoldFont       = *-\sourcesans@boldstyle ,
+			  BoldItalicFont = *-\sourcesans@boldstyle It]
+			{SourceSans3}
+	\fi
+
+	% Font families
+	% Regular/Bold
+	\newfontfamily\sourcesans
+		[ UprightFont    = *-Regular ,
+		  ItalicFont     = *-RegularIt ,
+		  BoldFont       = *-Bold ,
+		  BoldItalicFont = *-BoldIt ]
+		{SourceSans3}
+
+	% Light/Semibold
+	\newfontfamily\sourcesanslight
+		[ UprightFont    = *-Light ,
+		  ItalicFont     = *-LightIt ,
+		  BoldFont       = *-Semibold ,
+		  BoldItalicFont = *-SemiboldIt ]
+		{SourceSans3}
+
+	% ExtraLight/Black
+	\newfontfamily\sourcesansextreme
+		[ UprightFont    = *-ExtraLight ,
+		  ItalicFont     = *-ExtraLightIt ,
+		  BoldFont       = *-Black ,
+		  BoldItalicFont = *-BlackIt ]
+		{SourceSans3}
+
+	% Lining figures
+	\newfontfamily\sourcesanslf
+		[ Numbers        = \sourcesans@figurealign ,
+		  UprightFont    = *-\sourcesans@regstyle ,
+		  ItalicFont     = *-\sourcesans@regstyle It ,
+		  BoldFont       = *-\sourcesans@boldstyle ,
+		  BoldItalicFont = *-\sourcesans@boldstyle It ]
+		{SourceSans3}
+
+	% Dont keep all default font features
+	\defaultfontfeatures{}
+
+% Load type1 font.
+\else
+	\RequirePackage[OT1,LY1,T1]{fontenc}
+	\RequirePackage{mweights}
+
+	% Oldstyle/Lining
+	\ifsourcesans@oldstyle
+		\def\sourcesans@figurestyle{OsF}
+	\else
+		\def\sourcesans@figurestyle{LF}
+	\fi
+
+	% Tabular/Proportional
+	\ifsourcesans@tabular
+		\def\sourcesans@figurealign{T}
+	\else
+		\def\sourcesans@figurealign{}
+	\fi
+
+	% Black/Semibold/Bold
+	\ifsourcesans@black
+		\def\bfseries@sf{eb}
+	\else
+		\ifsourcesans@semibold
+			\def\bfseries@sf{sb}
+		\else
+			\def\bfseries@sf{b}
+		\fi
+	\fi
+
+	% Light/ExtraLight/Regular
+	\ifsourcesans@light
+		\def\mdseries@sf{l}
+	\else
+		\ifsourcesans@extralight
+			\def\mdseries@sf{el}
+		\else
+			\def\mdseries@sf{m}
+		\fi
+	\fi
+
+	% Sans serif font
+	\ifsourcesans@sfdefault
+		\edef\sfdefault{SourceSansThree-\sourcesans@figurealign\sourcesans@figurestyle}
+	\fi
+
+	% If source sans pro is the default font \oldstylenums needs a new definition.
+	\ifsourcesans@default
+		\let\nativeoldstylenums\oldstylenums
+		\renewcommand*\oldstylenums[1]{%
+			\begingroup
+				\ifmmode
+					\mathgroup\symletters #1%
+				\else
+					\fontfamily{SourceSansThree-\sourcesans@figurealign OsF}\selectfont #1%
+				\fi
+			\endgroup
+		}
+		\edef\seriesdefault{\mdseries@sf}
+	\fi
+\fi
+
+% Set default font family
+\ifsourcesans@default
+	\edef\familydefault{\sfdefault}
+\fi
+
+\endinput

@@ -1,0 +1,42 @@
+% Source Sans Pro for LaTeX
+%
+% Silke Hofstra, tex@slxh.nl
+%
+% This file selects either the OTF or the TYPE1 fonts based on
+% the LaTeX engine used.
+%
+% Licenced under the LPPL v1.3 or higher.
+%
+\NeedsTeXFormat{LaTeX2e}[1994/12/01]
+\ProvidesPackage{sourcesanspro}[2022/06/29 v3.0 Compatibility package for sourcesans]
+
+\RequirePackage{ifxetex,ifluatex,xkeyval}
+
+\DeclareOptionX{lining}      {\PassOptionsToPackage{lining}{sourcesans}}
+\DeclareOptionX{nf}          {\PassOptionsToPackage{nf}{sourcesans}}
+\DeclareOptionX{lf}          {\PassOptionsToPackage{lf}{sourcesans}}
+\DeclareOptionX{oldstyle}    {\PassOptionsToPackage{oldstyle}{sourcesans}}
+\DeclareOptionX{osf}         {\PassOptionsToPackage{osf}{sourcesans}}
+\DeclareOptionX{tabular}     {\PassOptionsToPackage{tabular}{sourcesans}}
+\DeclareOptionX{proportional}{\PassOptionsToPackage{proportional}{sourcesans}}
+\DeclareOptionX{black}       {\PassOptionsToPackage{black}{sourcesans}}
+\DeclareOptionX{semibold}    {\PassOptionsToPackage{semibold}{sourcesans}}
+\DeclareOptionX{bold}        {\PassOptionsToPackage{bold}{sourcesans}}
+\DeclareOptionX{light}       {\PassOptionsToPackage{light}{sourcesans}}
+\DeclareOptionX{extralight}  {\PassOptionsToPackage{extralight}{sourcesans}}
+\DeclareOptionX{regular}     {\PassOptionsToPackage{regular}{sourcesans}}
+\DeclareOptionX{scale}       {\PassOptionsToPackage{scale}{sourcesans}}
+\DeclareOptionX{scaled}      {\PassOptionsToPackage{scaled}{sourcesans}}
+\DeclareOptionX{default}     {\PassOptionsToPackage{default}{sourcesans}}
+\DeclareOptionX{sfdefault}   {\PassOptionsToPackage{sfdefault}{sourcesans}}
+\DeclareOptionX{nosfdefault} {\PassOptionsToPackage{nosfdefault}{sourcesans}}
+\DeclareOptionX{type1}       {\PassOptionsToPackage{type1}{sourcesans}}
+\DeclareOptionX{t1}          {\PassOptionsToPackage{t1}{sourcesans}}
+\DeclareOptionX{opentype}    {\PassOptionsToPackage{opentype}{sourcesans}}
+\DeclareOptionX{otf}         {\PassOptionsToPackage{otf}{sourcesans}}
+
+% Default options
+\ExecuteOptionsX{sfdefault,lining,tabular,bold,regular}
+\ProcessOptionsX\relax
+
+\RequirePackage{sourcesans}

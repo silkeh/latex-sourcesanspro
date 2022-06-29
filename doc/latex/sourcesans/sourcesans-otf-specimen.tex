@@ -1,18 +1,18 @@
 \documentclass[11pt]{standalone}
 \usepackage{array}
-\usepackage[default,opentype]{sourcesanspro}
+\usepackage[default,opentype]{sourcesans}
 \newcommand*\spA{abcde}
 \newcommand*\spB{01469}
 \newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1 \\}
 \begin{document}
 \begin{tabular}{
-		>{\sourcesanspro}l
-		>{\sourcesansproextreme}c
-		>{\sourcesansprolight}c
-		>{\sourcesanspro}c
-		>{\sourcesansprolight\bfseries}c
-		>{\sourcesanspro\bfseries}c
-		>{\sourcesansproextreme\bfseries}c }
+		>{\sourcesans}l
+		>{\sourcesansextreme}c
+		>{\sourcesanslight}c
+		>{\sourcesans}c
+		>{\sourcesanslight\bfseries}c
+		>{\sourcesans\bfseries}c
+		>{\sourcesansextreme\bfseries}c }
 	& ExtraLight & Light & Regular & Semibold & Bold & Black \\
 	normal               \spr
 	italic               \spr[\itshape\spA]

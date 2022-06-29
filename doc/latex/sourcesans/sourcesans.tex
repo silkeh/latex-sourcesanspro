@@ -1,6 +1,6 @@
 \documentclass[10pt,a4paper,english]{article}
 \usepackage{geometry,metalogo,hyperref,babel,mdwlist,array,multicol}
-\usepackage[default,osf]{sourcesanspro}
+\usepackage[default,osf]{sourcesans}
 \usepackage[scaled=.95]{sourcecodepro}
 
 \hypersetup{
@@ -13,19 +13,19 @@
 \newcommand*\file[1]{\href{run:#1.pdf}{#1}}
 
 \title{\bfseries
-	\Huge sourcesanspro\\
-	\Large Adobe's Source Sans Pro typeface for \LaTeX
+	\Huge sourcesans\\
+	\Large Adobe's Source Sans typeface for \LaTeX
 }
 
 \author{Silke Hofstra, \href{mailto:tex@slxh.nl}{tex@slxh.nl}}
-\date{Documentation for sourcesanspro v2.8.\\ \today}
+\date{Documentation for sourcesans v3.0.\\ \today}
 
 \begin{document}
 \maketitle
 \begin{multicols}{2}
-This package provides the Source Sans Pro font in an easy to use way. For \XeLaTeX\ and \LuaLaTeX\ users the original OpenType fonts from \href{https://github.com/adobe-fonts/source-sans-pro}{GitHub} are used. The entire font family is included.
+This package provides the Source Sans font in an easy to use way. For \XeLaTeX\ and \LuaLaTeX\ users the original OpenType fonts from \href{https://github.com/adobe-fonts/source-sans}{GitHub} are used. The entire font family is included.
 
-This package is also available on \href{https://github.com/silkeh/latex-sourcesanspro}{GitHub}.
+This package is also available on \href{https://github.com/silkeh/latex-sourcesans}{GitHub}.
 
 
 \section{Options}
@@ -42,8 +42,8 @@ The package has the following options:
 	\item \textbf{extralight}:     \texttt{\textbackslash mdseries} is extra light.
 	\item \textbf{regular}:        \texttt{\textbackslash mdseries} is regular.
 	\item \textbf{scale, scaled}:  Change the scaling with a factor. For example:  \texttt{scale=.5}
-	\item \textbf{default}:        Source Sans Pro is set as the default font family and as the sans serif family.
-	\item \textbf{nosfdefault}:    Source Sans Pro is not set as sans-serif family.
+	\item \textbf{default}:        Source Sans is set as the default font family and as the sans serif family.
+	\item \textbf{nosfdefault}:    Source Sans is not set as sans-serif family.
 	\item \textbf{type1, t1}:      Override automatic detection and use the Type 1 fonts.
 	\item \textbf{opentype, otf}:  Override automatic detection and use OpenType fonts.
 \end{itemize*}
@@ -52,16 +52,16 @@ The following options are enabled by default: lining, tabular, bold and regular.
 \section{Commands}
 Commands for all weights are also provided for \XeLaTeX\ and \LuaLaTeX\ users.
 \begin{itemize*}
-	\item \texttt{\bfseries \textbackslash sourcesanspro}
+	\item \texttt{\bfseries \textbackslash sourcesans}
 		-- the regular and bold weights.
-	\item \texttt{\bfseries \textbackslash sourcesansprolight}
+	\item \texttt{\bfseries \textbackslash sourcesanslight}
 		-- the light and semibold weights.
-	\item \texttt{\bfseries \textbackslash sourcesansproextreme}
+	\item \texttt{\bfseries \textbackslash sourcesansextreme}
 		-- the extra light and black weights.
 \end{itemize*}
 
 \section{Licence}
-Adobe's Source Sans Pro typeface is available under the \href{http://scripts.sil.org/OFL}{SIL Open Font License 1.1}.\\
+Adobe's Source Sans typeface is available under the \href{http://scripts.sil.org/OFL}{SIL Open Font License 1.1}.\\
 All \LaTeX\ code is available under the \href{http://www.latex-project.org/lppl/}{\LaTeX\ project public license} v1.3 or later.
 
 \section{Specimen}
@@ -75,31 +75,37 @@ A complete list of available font features is available on page \pageref{sec:otf
 
 \subsection{Files}
 \begin{itemize*}
-	\item SourceSansPro-ExtraLight.otf
-	\item SourceSansPro-ExtraLightIt.otf
-	\item SourceSansPro-Light.otf
-	\item SourceSansPro-LightIt.otf
-	\item SourceSansPro-Regular.otf
-	\item SourceSansPro-RegularIt.otf
-	\item SourceSansPro-Semibold.otf
-	\item SourceSansPro-SemiboldIt.otf
-	\item SourceSansPro-Bold.otf
-	\item SourceSansPro-BoldIt.otf
-	\item SourceSansPro-Black.otf
-	\item SourceSansPro-BlackIt.otf
+	\item SourceSans3-ExtraLight.otf
+	\item SourceSans3-ExtraLightIt.otf
+	\item SourceSans3-Light.otf
+	\item SourceSans3-LightIt.otf
+	\item SourceSans3-Regular.otf
+	\item SourceSans3-RegularIt.otf
+	\item SourceSans3-Semibold.otf
+	\item SourceSans3-SemiboldIt.otf
+	\item SourceSans3-Bold.otf
+	\item SourceSans3-BoldIt.otf
+	\item SourceSans3-Black.otf
+	\item SourceSans3-BlackIt.otf
 \end{itemize*}
 
 \section{Type1}
 The following Type1 font families are included:
 \begin{itemize*}
-	\item SourceSansPro-LF
-	\item SourceSansPro-TLF
-	\item SourceSansPro-OsF
-	\item SourceSansPro-TOsF
+	\item SourceSansThree-LF
+	\item SourceSansThree-TLF
+	\item SourceSansThree-OsF
+	\item SourceSansThree-TOsF
 \end{itemize*}
 With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘eb’ and shapes ‘n’, ‘i’ and ‘sc’.
 
 \section{Version history}
+\subsection*{3.0}
+\begin{itemize*}
+	\item Update fonts to version 3.046
+	\item Rename package to \texttt{sourcesans}
+\end{itemize*}
+
 \subsection*{2.8}
 \begin{itemize*}
 	\item Updated fonts to version 3.006.
@@ -147,8 +153,8 @@ With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘eb’ and shapes �
 
 \subsection*{2.0}
 \begin{itemize*}
-	\item Merged all \texttt{.sty} files into \texttt{sourcesanspro.sty}.
-	\item \texttt{default} option now sets the default font family to \texttt{Source Sans Pro}, not \texttt{\textbackslash sfdefault}.
+	\item Merged all \texttt{.sty} files into \texttt{sourcesans.sty}.
+	\item \texttt{default} option now sets the default font family to \texttt{Source Sans}, not \texttt{\textbackslash sfdefault}.
 	\item \texttt{type1}, \texttt{t1}, \texttt{opentype} and \texttt{otf} option added to override automatic detection.
 	\item Added \texttt{OT1} to \texttt{fontspec} options.
 \end{itemize*}
@@ -161,7 +167,7 @@ With series ‘el’, ‘l’, ‘m’, ‘sb’, ‘b’, ‘eb’ and shapes �
 \end{itemize*}
 
 \section{Known issues}
-Issues can be reported \href{https://github.com/silkeh/latex-sourcesanspro/issues}{on GitHub}.
+Issues can be reported \href{https://github.com/silkeh/latex-sourcesans/issues}{on GitHub}.
 
 \newpage
 \end{multicols}
@@ -171,16 +177,16 @@ Issues can be reported \href{https://github.com/silkeh/latex-sourcesanspro/issue
 \subsection{OpenType}
 \begin{figure}[ht]
 	\centering
-	\includegraphics{sourcesanspro-otf-specimen}
+	\includegraphics{sourcesans-otf-specimen}
 \end{figure}
-This table can also be found in \file{sourcesanspro-otf-specimen}.
+This table can also be found in \file{sourcesans-otf-specimen}.
 
 \subsection{Type1}
 \begin{figure}[ht]
 	\centering
-	\includegraphics{sourcesanspro-type1-specimen}
+	\includegraphics{sourcesans-type1-specimen}
 \end{figure}
-This table can also be found in \file{sourcesanspro-type1-specimen}.
+This table can also be found in \file{sourcesans-type1-specimen}.
 
 \newpage
 \section{Opentype features}
