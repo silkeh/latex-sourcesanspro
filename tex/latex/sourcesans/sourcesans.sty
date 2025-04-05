@@ -22,6 +22,7 @@
 \newif\ifsourcesans@semibold
 \newif\ifsourcesans@light
 \newif\ifsourcesans@extralight
+\newif\ifsourcesans@medium
 
 % Scaling command
 \newcommand*{\SourceSansThree@scale}{1}
@@ -48,6 +49,7 @@
 \DeclareOptionX{light}       {\sourcesans@lighttrue \sourcesans@extralightfalse}
 \DeclareOptionX{extralight}  {\sourcesans@lightfalse\sourcesans@extralighttrue}
 \DeclareOptionX{regular}     {\sourcesans@lightfalse\sourcesans@extralightfalse}
+\DeclareOptionX{medium}      {\sourcesans@mediumtrue\sourcesans@lightfalse\sourcesans@extralightfalse}
 \DeclareOptionX{scale}       {\renewcommand*{\SourceSansThree@scale}{#1}}
 \DeclareOptionX{scaled}      {\renewcommand*{\SourceSansThree@scale}{#1}}
 \DeclareOptionX{default}     {\sourcesans@defaulttrue}
@@ -101,6 +103,9 @@
 		\ifsourcesans@extralight
 			\def\sourcesans@regstyle{ExtraLight}
 		\else
+			\ifsourcesans@medium
+				\def\sourcesans@regstyle{Medium}
+			\fi
 			\def\sourcesans@regstyle{Regular}
 		\fi
 	\fi
@@ -127,6 +132,14 @@
 	\newfontfamily\sourcesans
 		[ UprightFont    = *-Regular ,
 		  ItalicFont     = *-RegularIt ,
+		  BoldFont       = *-Bold ,
+		  BoldItalicFont = *-BoldIt ]
+		{SourceSans3}
+
+	% Medium/Bold
+	\newfontfamily\sourcesansmedium
+		[ UprightFont    = *-Medium ,
+		  ItalicFont     = *-MediumIt ,
 		  BoldFont       = *-Bold ,
 		  BoldItalicFont = *-BoldIt ]
 		{SourceSans3}

@@ -17,6 +17,7 @@ The following options can be used:
 * `light`:         `\mdseries` is light.
 * `extralight`:    `\mdseries` is extra light.
 * `regular`:       `\mdseries` is regular.
+* `medium`:`       `\mdseries` is medium (OTF only).
 * `scale, scaled`: set scaling for the font, eg: scale=.5
 * `default`:       Source Sans is set as default font family.
 * `nosfdefault`:   Source Sans is not set as sans-serif family.

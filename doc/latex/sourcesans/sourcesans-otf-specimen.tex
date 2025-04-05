@@ -3,17 +3,18 @@
 \usepackage[default,opentype]{sourcesans}
 \newcommand*\spA{abcde}
 \newcommand*\spB{01469}
-\newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1 \\}
+\newcommand*\spr[1][\spA]{& #1 & #1 & #1 & #1 & #1 & #1 & #1 \\}
 \begin{document}
 \begin{tabular}{
 		>{\sourcesans}l
 		>{\sourcesansextreme}c
 		>{\sourcesanslight}c
 		>{\sourcesans}c
+		>{\sourcesansmedium}c
 		>{\sourcesanslight\bfseries}c
 		>{\sourcesans\bfseries}c
 		>{\sourcesansextreme\bfseries}c }
-	& ExtraLight & Light & Regular & Semibold & Bold & Black \\
+	& ExtraLight & Light & Regular & Medium & Semibold & Bold & Black \\
 	normal               \spr
 	italic               \spr[\itshape\spA]
 	small-caps           \spr[\scshape\spA]
