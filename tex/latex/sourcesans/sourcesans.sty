@@ -193,23 +193,27 @@
 
 	% Black/Semibold/Bold
 	\ifsourcesans@black
-		\def\bfseries@sf{eb}
+		\def\bfseries@sf{black}
 	\else
 		\ifsourcesans@semibold
-			\def\bfseries@sf{sb}
+			\def\bfseries@sf{semibold}
 		\else
-			\def\bfseries@sf{b}
+			\def\bfseries@sf{bold}
 		\fi
 	\fi
 
 	% Light/ExtraLight/Regular
 	\ifsourcesans@light
-		\def\mdseries@sf{l}
+		\def\mdseries@sf{light}
 	\else
 		\ifsourcesans@extralight
-			\def\mdseries@sf{el}
+			\def\mdseries@sf{extralight}
 		\else
-			\def\mdseries@sf{m}
+			\ifsourcesans@medium
+				\def\mdseries@sf{medium}
+			\else
+				\def\mdseries@sf{regular}
+			\fi
 		\fi
 	\fi
 
