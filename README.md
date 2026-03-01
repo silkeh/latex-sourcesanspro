@@ -1,7 +1,7 @@
 Source Sans
 ===========
 This package provides the Source Sans typeface as a LaTeX package.
-Full documentation and revision history in `sourcesans.pdf`.
+Full documentation and revision history in [the PDF documentation][pdf].
 
 Options
 -------
@@ -31,3 +31,5 @@ Fonts are provided under the SIL Open Font License 1.1.
 LaTeX source is licensed under the LPPL version 1.3 or higher.
 
 Enjoy!
+
+[pdf]: https://gitlab.com/slxh/latex/sourcesans/-/jobs/artifacts/master/file/sourcesans.pdf?job=build
