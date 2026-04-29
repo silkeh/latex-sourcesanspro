@@ -25,6 +25,12 @@ The following options can be used:
 * `opentype, otf`: override detection and load the OpenType font family.
 
 
+Development
+-----------
+
+This package is currently maintained by [Silke Hofstra][email].
+Issues can be filed [on GitLab][gitlab].
+
 License
 -------
 Fonts are provided under the SIL Open Font License 1.1.
@@ -33,3 +39,5 @@ LaTeX source is licensed under the LPPL version 1.3 or higher.
 Enjoy!
 
 [pdf]: https://gitlab.com/slxh/latex/sourcesans/-/jobs/artifacts/master/file/sourcesans.pdf?job=build
+[email]: mailto:tex@slxh.nl
+[gitlab]: https://gitlab.com/slxh/latex/sourcesans
