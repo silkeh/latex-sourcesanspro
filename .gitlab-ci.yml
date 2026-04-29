@@ -8,7 +8,6 @@ variables:
   PACKAGE: sourcesans
 
 build:
-  stage: build
   script:
     - make fonts
     - cp -a $CI_PROJECT_DIR/* /usr/local/texlive/texmf-local
@@ -16,10 +15,6 @@ build:
     - texhash
     - updmap-sys
     - make
-  artifacts:
-    paths:
-      - "*.pdf"
-      - "*.zip"
 
 test:
   stage: test
